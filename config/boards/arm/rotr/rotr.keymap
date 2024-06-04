@@ -16,13 +16,13 @@
 
 		default_layer {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&kp C_MUTE &lt 4 F13 &kp C_PP>;
+			bindings = <&kp C_MUTE &lt 4 UP_ARROW &kp DOWN_ARROW>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		one {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&kp C_PREV &lt 4 C_PP &kp C_NEXT>;
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+			bindings = <&kp C_MUTE &lt 4 C_VOL_DOWN &kp C_VOL_UP>;
+			sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
 		};
 		two {
 			//PREV | PLAY/PAUSE | NEXT
