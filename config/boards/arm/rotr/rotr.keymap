@@ -2,20 +2,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/bt.h>
-/ {
-    behaviors {
-        inc_dec_kp_2: behavior_sensor_rotate_key_press_2 {
-            compatible = "zmk,behavior-sensor-rotate-key-press";
-            label = "ENC_KEY_PRESS_2";
-            triggers-per-rotation = <8>;
-            #sensor-binding-cells = <2>;
-            
-        };
-    };
-};
 
 &inc_dec_kp {
-	triggers-per-rotation = <6>;
+	triggers-per-rotation = <8>;
 };
 &def_lshft {
 	triggers-per-rotation = <4>;
@@ -37,7 +26,7 @@
 			//MUTE | VOLUME DOWN | VOLUME UP
 			//DOWN ARROW | UP ARROW
 			bindings = <&kp C_MUTE &lt 4 C_VOL_DN &kp C_VOL_UP>;
-			sensor-bindings = <&inc_dec_kp_2 DOWN UP>;
+			sensor-bindings = <&inc_dec_kp DOWN UP>;
 		};
 		two {
 			//BLUE
