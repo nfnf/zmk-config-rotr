@@ -26,24 +26,28 @@
 		compatible = "zmk,keymap";
 
 		default_layer {
+			//RED
 			//MUTE | UP ARROW | DOWN ARROW
 			//VOLUME UP | VOLUME DOWN
 			bindings = <&kp C_MUTE &lt 4 UP &kp DOWN>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		one {
+			//GREEN 
 			//MUTE | VOLUME DOWN | VOLUME UP
 			//DOWN ARROW | UP ARROW
 			bindings = <&kp C_MUTE &lt 4 C_VOL_DN &kp C_VOL_UP>;
 			sensor-bindings = <&inc_dec_kp_2 DOWN UP>;
 		};
 		two {
+			//BLUE
 			//MUTE | VOLUME DOWN | VOLUME UP
 			//PAGE DOWN | PAGE UP
 			bindings = <&kp C_MUTE &lt 4 C_VOL_DN &kp C_VOL_UP>;
 			sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
 		};
 		three {
+			//YELLOW
 			//MUTE | PAGE UP | PAGE DOWN
 			//VOLUME UP | VOLUME DOWN
 			bindings = <&kp C_MUTE &lt 4 PG_DN &kp PG_UP>;
