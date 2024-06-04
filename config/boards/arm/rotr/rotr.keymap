@@ -46,9 +46,8 @@
 		three {
 			//MUTE | PAGE UP | PAGE DOWN
 			//VOLUME UP | VOLUME DOWN
-			bindings = <&kp C_MUTE &lt 4 PG_UP &kp PG_DOWN>;
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-			
+			bindings = <&kp C_MUTE &lt 4 PG_UP &kp PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;			
 		};
 		shift {
 			//PREV | PLAY/PAUSE | NEXT
