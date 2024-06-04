@@ -15,7 +15,7 @@
 };
 
 &inc_dec_kp {
-	triggers-per-rotation = <4>;
+	triggers-per-rotation = <6>;
 };
 &def_lshft {
 	triggers-per-rotation = <4>;
@@ -33,20 +33,20 @@
 		};
 		one {
 			//MUTE | VOLUME DOWN | VOLUME UP
-			//UP ARROW | DOWN ARROW
+			//DOWN ARROW | UP ARROW
 			bindings = <&kp C_MUTE &lt 4 C_VOL_DN &kp C_VOL_UP>;
-			sensor-bindings = <&inc_dec_kp_2 UP DOWN>;
+			sensor-bindings = <&inc_dec_kp_2 DOWN UP>;
 		};
 		two {
 			//MUTE | VOLUME DOWN | VOLUME UP
-			//PAGE UP | PAGE DOWN
+			//PAGE DOWN | PAGE UP
 			bindings = <&kp C_MUTE &lt 4 C_VOL_DN &kp C_VOL_UP>;
-			sensor-bindings = <&inc_dec_kp_2 PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
 		};
 		three {
 			//MUTE | PAGE UP | PAGE DOWN
 			//VOLUME UP | VOLUME DOWN
-			bindings = <&kp C_MUTE &lt 4 PG_UP &kp PG_DN>;
+			bindings = <&kp C_MUTE &lt 4 PG_DN &kp PG_UP>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;			
 		};
 		shift {
